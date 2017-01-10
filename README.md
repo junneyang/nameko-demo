@@ -1,2 +1,4 @@
 # nameko-demo
-demo for python micro-service with &lt;a href="https://github.com/nameko/nameko">nameko&lt;/a>
+demo for python micro-service with [nameko](https://github.com/nameko/nameko)
+
+
