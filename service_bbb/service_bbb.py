@@ -22,7 +22,8 @@ class ServiceBBB:
         print("sleep 10")
         time.sleep(10)
         return {"name":name, "age":age, "method":"method_b1", "aaa":self.service_aaa.method_a1("AAA", 123)}
-        # with ClusterRpcProxy(config) as cluster_rpc:
+        # RpcTimeout: 3
+        # with ClusterRpcProxy(config, timeout=3) as cluster_rpc:
             # return cluster_rpc.service_aaa.method_a1("BBB", 321)
     @rpc  # `method` is exposed over RPC
     def method_b2(self, params):
